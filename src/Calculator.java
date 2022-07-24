@@ -22,6 +22,7 @@ public class Calculator implements ActionListener {
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(null);
+		frame.getContentPane().setBackground(new Color(0xa9c6f5));
 		
 		textField = new JTextField();
 		textField.setBounds(50, 25, 300, 50);
@@ -61,13 +62,14 @@ public class Calculator implements ActionListener {
 			numberButtons[i].setFocusable(false);
 		}
 		
-		delButton.setBounds(50, 430, 100, 50);
-		clrButton.setBounds(150, 430, 100, 50);
-		equButton.setBounds(250, 430, 100, 50);
+		delButton.setBounds(50, 425, 100, 50);
+		clrButton.setBounds(150, 425, 100, 50);
+		equButton.setBounds(250, 425, 100, 50);
 		
 		panel = new JPanel();
 		panel.setBounds(50, 100, 300, 300);
 		panel.setLayout(new GridLayout(4, 4, 10, 10));
+		panel.setBackground(new Color(0xa9c6f5));
 		
 		panel.add(numberButtons[1]);
 		panel.add(numberButtons[2]);
